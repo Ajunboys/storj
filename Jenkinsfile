@@ -8,7 +8,7 @@ node('node') {
 
       echo "Current build result: ${currentBuild.result}"
     }
-
+/*
     stage('Run Versions Test') {
         try {
           echo "Running Versions test"
@@ -39,7 +39,7 @@ node('node') {
           sh 'docker stop redis || true'
         }
     }
-
+*/
     stage('Build Binaries') {
       sh 'make binaries'
 
